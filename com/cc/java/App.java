@@ -10,18 +10,23 @@ public class App {
 
 
         Cat cat1 = new Cat();
-        System.out.println("Blick von aussen " + cat1);
-        cat1.tellYourAddress();
+        output("Blick von aussen " + cat1); //kurzer Verweis
+        output(cat1.tellYourAddress());
 
-        System.out.println("--------------");
+
+        App.output("--------------"); //ausführlich
 
         Cat cat2 = new Cat();
-        System.out.println("Blick von aussen2 " + cat2);
-        cat2.tellYourAddress();
+        output("Blick von aussen2 " + cat2);
+        output(cat2.tellYourAddress()); //Fkt steht in cat2
      
      
         
     }
 
-}
 
+    public static void output(String outStr) {
+        System.out.println(outStr);
+    }
+}
+//output muss statisch gemacht werden, damit main bescheid weiss
