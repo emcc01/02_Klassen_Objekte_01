@@ -8,15 +8,11 @@ public class App {
         // Cat -- Referenztyp
         // cat -- Referenzvariable
 
-
-        Cat cat1 = new Cat();
+// durch Constructor angegeben statt einzelne Wertzuweisungen
+        Cat cat1 = new Cat("Grizabella", "white", 29);
        
-        //Wertzuweisung
-        cat1.name = "Grizabella";
-        cat1.furColor = "white";
-        cat1.age = 29;
 
-
+        //Ausgabe über Methoden statt direkt:
         output(cat1.tellYourName());
         output(cat1.tellYourFurColor());
         output(Integer.toString(cat1.tellYourAge()));
@@ -24,13 +20,9 @@ public class App {
 
         App.output("--------------"); //ausführlich
 
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
        
-        //Wertzuweisung
-        cat2.name = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age = 35;
-
+       
         output(cat2.tellYourName());
         output(cat2.tellYourFurColor());
         output(Integer.toString(cat2.tellYourAge()));
