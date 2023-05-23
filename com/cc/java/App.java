@@ -13,19 +13,19 @@ public class App {
        
 
         //Ausgabe über Methoden statt direkt:
-        output(cat1.tellYourName());
-        output(cat1.tellYourFurColor());
-        output(Integer.toString(cat1.tellYourAge()));
+        output(cat1.getName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));
 
 
         App.output("--------------"); //ausführlich
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
        
-       
-        output(cat2.tellYourName());
-        output(cat2.tellYourFurColor());
-        output(Integer.toString(cat2.tellYourAge()));
+       //mit get: getter u setter aus cat Klasse
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
         
     }
 
