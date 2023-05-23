@@ -10,17 +10,27 @@ public class App {
 
 
         Cat cat1 = new Cat();
-        output("Blick von aussen " + cat1); //kurzer Verweis
-        output(cat1.tellYourAddress());
+       
+        //Wertzuweisung
+        cat1.name = "Grizabella";
+        cat1.furColor = "white";
+        cat1.age = 29;
+
+
+        output(cat1.name);
+        output(cat1.furColor);
+       // output(cat1.age); geht nicht, weil output string sein muss
+       output(Integer.toString(cat1.age));
 
 
         App.output("--------------"); //ausführlich
 
         Cat cat2 = new Cat();
-        output("Blick von aussen2 " + cat2);
-        output(cat2.tellYourAddress()); //Fkt steht in cat2
-     
-     
+       
+        //Wertzuweisung
+        cat2.name = "Alonzo";
+        cat1.furColor = "grey";
+        cat1.age = 35;
         
     }
 
