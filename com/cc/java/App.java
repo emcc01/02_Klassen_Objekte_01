@@ -29,8 +29,12 @@ public class App {
        
         //Wertzuweisung
         cat2.name = "Alonzo";
-        cat1.furColor = "grey";
-        cat1.age = 35;
+        cat2.furColor = "grey";
+        cat2.age = 35;
+
+        output(cat2.name);
+        output(cat2.furColor);
+        output(Integer.toString(cat2.age));
         
     }
 
